@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        height:800px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        user-select: none;
+        flex-direction: column;
+       }
+       .c1{
+        height:400px;
+        width:400px;
+        box-shadow: 2px 2px 10px grey;
+        border-radius:7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        background-color: seagreen;
+       }
+       form input{
+        display: block;
+        padding:2px 5px;
+        margin:2px 2px;
+        height: 20px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px grey;
+       }
+       input:hover{
+        background-color:antiquewhite;
+       }
+       #submit{
+        position: relative;
+        left:5px;
+        margin:10px 0px;
+       }
+       .d1{
+        margin-left:10px;
+        height:200px;
+        width:300px;
+        border:2px dotted white;
+        border-radius:10px;
+       }
+       .profile{
+        height:40px;
+        width:40px;
+        border-radius:100px;
+        position:relative;
+        left:40px;
+        top:10px;
+        overflow: hidden;
+
+       }
+       .img{
+        height:40px;
+        width:40px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <h1>Input data</h1>
+        <form>
+            img:<input type="text" placeholder="href of image">
+            name:<input type="text" placeholder="name">
+            profession:<input type="text" placeholder="profission">
+            description:<input type="text" placeholder="discription">
+            <input id="submit" type="submit">
+        </form>
+    </div><br>
+    <script src="script.js"></script>
+</body>
+</html>
